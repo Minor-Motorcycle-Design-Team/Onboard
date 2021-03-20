@@ -8,7 +8,7 @@
 int main(int argc, char* argv[]) {
 
     struct termios serial;
-    stdin str = "Hello";
+    stdin std = "Hello";
     char buffer[10];
 
     if (argc == 1) {
@@ -44,9 +44,9 @@ int main(int argc, char* argv[]) {
     tcsetattr(fd, TCSANOW, &serial); // Apply configuration
 
     // Attempt to send and receive
-    printf("Sending: %s\n", str);
+    printf("Sending: %s\n", std);
 
-    int wcount = write(fd, str, strlen(str));
+    int wcount = write(fd, std, strlen(str));
     if (wcount < 0) {
         perror("Write");
         return -1;
