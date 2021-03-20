@@ -3,7 +3,7 @@
 #include <string.h>
 #include <errno.h>
 #include <wiringPi.h>
-#include <wiringSerial.>
+#include <wiringSerial.h>
 
 int main()
 {
