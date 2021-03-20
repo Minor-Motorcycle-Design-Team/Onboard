@@ -22,7 +22,7 @@ ser.write(bytes(6))
 
 while(True):
     while(ser.in_waiting >= 9):
-        #print (ser.read())
+        //#print (ser.read())
         if((b'Y' == ser.read()) and ( b'Y' == ser.read())):
             Dist_L = ser.read()
             Dist_H = ser.read()
