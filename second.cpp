@@ -29,11 +29,11 @@ int main(int argc, char** argv)
 		{
 			if (rx_length < 0)
 			{
-				std::cout<<"An error occured"<<endl;
+				std::cout<<"An error occured"<<std::endl;
 			}
 			else if (rx_length == 0)
 			{
-				std::cout<<"No data, waiting"<<endl;
+				std::cout<<"No data, waiting"<<std::endl;
 			}
 			else
 			{
