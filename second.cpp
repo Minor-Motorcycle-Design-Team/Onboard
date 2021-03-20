@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 	uart0_filestream = open("/dev/ttyUSB1", O_RDONLY | O_NOCTTY | O_NDELAY);
 	if (uart0_filestream == -1)
 	{
-		printf("Error - Unable to open UART")
+		printf("Error - Unable to open UART");
 	}
 	struct termios options;
 	tcgetattr(uart0_filestream, &options);
