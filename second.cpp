@@ -8,7 +8,7 @@
 int main(int argc, char* argv[]) {
 
     struct termios serial;
-    string str = "Hello";
+    stdin str = "Hello";
     char buffer[10];
 
     if (argc == 1) {
