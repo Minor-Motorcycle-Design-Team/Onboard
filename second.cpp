@@ -2,22 +2,22 @@ import serial
 import time
 ser = serial.Serial(/dev/serial0, 115200, timeout = 1)
 
-#ser.write(0x42)
+//#ser.write(0x42)
 ser.write(bytes(b'B'))
-#ser.write(0x57)
+//#ser.write(0x57)
 ser.write(bytes(b'W'))
 
-#ser.write(0x02)
+//#ser.write(0x02)
 ser.write(bytes(2))
-#ser.write(0x00)
+//#ser.write(0x00)
 ser.write(bytes(0))
-#ser.write(0x00)
+//#ser.write(0x00)
 ser.write(bytes(0))
-#ser.write(0x00)
+//#ser.write(0x00)
 ser.write(bytes(0))
-#ser.write(0x01)
+//#ser.write(0x01)
 ser.write(bytes(1))
-#ser.write(0x06)
+//#ser.write(0x06)
 ser.write(bytes(6))
 
 while(True):
