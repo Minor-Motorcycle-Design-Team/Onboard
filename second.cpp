@@ -3,7 +3,7 @@
 #include <fcntl.h>
 #include <termios.h>
 
-using namespaces std;
+using namespace std;
 
 int main(int argc, char** argv)
 {
