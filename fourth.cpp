@@ -15,7 +15,7 @@ int main(int argc, char** argv)
 	}
 	struct termios options;
 	tcgetattr(uart0_filestream, &options);
-	options.c_cflag = B9600 | CRTSCTS  CS8 | PARENB | CLOCAL | CREAD;
+	options.c_cflag = B9600 | CRTSCTS | CS8 | PARENB | CLOCAL | CREAD;
 	options.c_iflag = IGNPAR | ICRNL;
 	options.c_oflag = 0;
 	options.c_lflag = ICANON;
