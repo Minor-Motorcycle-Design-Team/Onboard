@@ -46,3 +46,17 @@ int main(int argc, char** argv)
 	}
 	close(uart0_filestream);
 }
+
+void *InterfaceUART::ReadData(void *p)
+{
+  res = read(uart0_filestream, buf, 255);
+  float *a = (float*)malloc(sizeof(float));
+  *a = (float)atof(buf);
+  return (void*)a;
+}
+
+void *InterfaceUART::readData_helper (void *p)
+{
+  InterfaceUART *app = (InterfaceUART*)p;
+  return (InterfaceUART*)p) ->ReadData(app);
+}
