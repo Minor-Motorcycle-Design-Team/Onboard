@@ -20,7 +20,7 @@ int main()
   char cmd[9] = {0xFF, 0x01, 0x86, 0x00, 0x00, 0x00, 0x00, 0x00, 0x79};
   char cmd2[9];
   cout<<"Tilt Angle Sensor is Running";
-  While (1)
+  while (1)
   {
     delay(1000);
     write (fd,cmd,9);
